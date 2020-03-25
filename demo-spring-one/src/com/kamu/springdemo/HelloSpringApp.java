@@ -21,6 +21,9 @@ public class HelloSpringApp {
 		System.out.println(theCoachTwo.getNameSport());
 		System.out.println(theCoachTwo.getDailyWorkout());
 		
+		// let's call out new method for fortune
+		System.out.println(theCoach.getDailyFortune());
+		
 		// close the context
 		context.close();
 
