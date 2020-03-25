@@ -1,17 +1,17 @@
 package com.kamu.springdemo;
 
-public class TrackCoach implements Coach {
+public class FootballCoach implements Coach{
 
 	@Override
 	public String getDailyWorkout() {
 		// TODO Auto-generated method stub
-		return "Run a hard 5km";
+		return "Run 60 minutes a day";
 	}
 
 	@Override
 	public String getNameSport() {
 		// TODO Auto-generated method stub
-		return "Trackball";
+		return "Football";
 	}
 
 }

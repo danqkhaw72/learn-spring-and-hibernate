@@ -22,7 +22,8 @@
     <!-- Define your beans here -->
     <bean id="myCoach"
     	class="com.kamu.springdemo.BaseballCoach"></bean>
-    
+    <bean id="myCoachTwo"
+    	class="com.kamu.springdemo.FootballCoach"></bean>
 </beans>
 
 
