@@ -33,6 +33,13 @@
     </bean>
     <bean id="myCoachTwo"
     	class="com.kamu.springdemo.FootballCoach"></bean>
+    	
+    <bean id="myCricketCoach"
+    	class="com.kamu.springdemo.CricketCoach">
+    	
+    	<!-- set up setter injection -->
+    	<property name="fortuneService" ref="myFortune" />
+    </bean>
 </beans>
 
 
