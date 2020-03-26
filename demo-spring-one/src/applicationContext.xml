@@ -8,6 +8,9 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
     
     
+    <!-- load the properties file: sport.properties -->
+    <context:property-placeholder location="classpath:sport.properties"/>
+    
     	<!-- 
 			Add a logger config to see logging messages.		
 			- For more detailed logs, set values to "FINEST"
@@ -41,8 +44,8 @@
     	<property name="fortuneService" ref="myFortune" />
     	
     	<!-- inject literal value -->
-    	<property name="emailAddress" value="thebestcoach@gmail.com"></property>
-    	<property name="team" value="Surisers Hyderabad"></property>
+    	<property name="emailAddress" value="${foo.email}"></property>
+    	<property name="team" value="${foo.team}"></property>
     </bean>
 </beans>
 
