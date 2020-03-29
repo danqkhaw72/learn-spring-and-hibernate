@@ -26,14 +26,21 @@
     
     <!-- define the dependency -->
     
+    <!-- HappyFortuneService -->
+    
    <bean id="myFortune"
    	class="com.kamu.springdemo.HappyFortuneService"></bean>
+   	
+   	<!-- RandomFortuneService -->
+   	<bean id="myRandomFortune"
+   		class="com.kamu.springdemo.RandomFortuneService"></bean>
     
     <bean id="myCoach"
     	class="com.kamu.springdemo.TrackCoach">
     	<!-- set up constructor injection -->
     	<constructor-arg ref="myFortune" />	
     </bean>
+    
     <bean id="myCoachTwo"
     	class="com.kamu.springdemo.FootballCoach"></bean>
     	
@@ -46,6 +53,14 @@
     	<!-- inject literal value -->
     	<property name="emailAddress" value="${foo.email}"></property>
     	<property name="team" value="${foo.team}"></property>
+    </bean>
+    
+    <bean id="myGolfCoach"
+    	class="com.kamu.springdemo.GolfCoach">
+    	
+    	<!-- set up setter ịnjection -->
+    	<constructor-arg ref="myRandomFortune"/>
+    	
     </bean>
 </beans>
 
