@@ -27,5 +27,15 @@ public class GolfCoach implements Coach{
 		// TODO Auto-generated method stub
 		return fortuneService.getFortune();
 	}
+	
+	// add a init method
+	public void doMyStartupStuff() {
+		System.out.println("GolfCoach: inside method doMyStartupStuff");
+	}
+	
+	// add a destroy method
+	public void doMyClearStartupStuff() {
+		System.out.println("GolfCoach: inside method doMyClearStartupStuff");
+	}
 
 }
