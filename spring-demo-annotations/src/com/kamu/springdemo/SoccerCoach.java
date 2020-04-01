@@ -16,4 +16,10 @@ public class SoccerCoach implements Coach{
 		return "Jog 20 minutes a day";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
