@@ -1,11 +1,14 @@
 package com.kamu.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class TennisCoach implements Coach {
 	
+	@Autowired
+	@Qualifier("randomFortuneService")
 	FortuneService fortuneService;
 	
 	// define a default constructor
@@ -13,13 +16,14 @@ public class TennisCoach implements Coach {
 		System.out.println(">> TennisCoach: inside default constructor");
 	}
 	
+	/*
 	// define a setter method
 	@Autowired
 	public void setTennisCoach(FortuneService theFortuneService) {
 		System.out.println(">> TennisCoach: inside setFortuneService");
 		this.fortuneService = theFortuneService;
 	}
-	
+	*/
 	
 	/*
 	@Autowired
